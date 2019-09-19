@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".DataActivity">
+
+    <TextView
+        android:id="@+id/getled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="STATUS LED"
+        app:layout_constraintBottom_toTopOf="@+id/getfan"
+        app:layout_constraintStart_toStartOf="@+id/getfan" />
+
+    <TextView
+        android:id="@+id/getfan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="STATUS FAN"
+        app:layout_constraintBottom_toTopOf="@+id/getsuhu"
+        app:layout_constraintStart_toStartOf="@+id/getsuhu" />
+
+    <TextView
+        android:id="@+id/getsuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="SUHU RUANGAN"
+        app:layout_constraintBottom_toTopOf="@+id/getflame"
+        app:layout_constraintStart_toStartOf="@+id/getflame" />
+
+    <TextView
+        android:id="@+id/getflame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS KEBAKARAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/getLDR"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="56dp"
+        android:text="Halaman Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="198dp" />
+
+    <TextView
+        android:id="@+id/staticLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:text="Led"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/getled" />
+
+    <TextView
+        android:id="@+id/staticFan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Kipas"
+        app:layout_constraintStart_toStartOf="@+id/staticLed"
+        app:layout_constraintTop_toBottomOf="@+id/staticLed" />
+
+    <TextView
+        android:id="@+id/staticSuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Suhu"
+        app:layout_constraintStart_toStartOf="@+id/staticFan"
+        app:layout_constraintTop_toBottomOf="@+id/staticFan" />
+
+    <TextView
+        android:id="@+id/staticFlame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Flame"
+        app:layout_constraintStart_toStartOf="@+id/staticSuhu"
+        app:layout_constraintTop_toBottomOf="@+id/staticSuhu" />
+
+    <TextView
+        android:id="@+id/staticLDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="LDR"
+        app:layout_constraintStart_toStartOf="@+id/staticFlame"
+        app:layout_constraintTop_toBottomOf="@+id/staticFlame" />
+
+    <TextView
+        android:id="@+id/staticBuzzer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Buzzer"
+        app:layout_constraintStart_toStartOf="@+id/staticLDR"
+        app:layout_constraintTop_toBottomOf="@+id/staticLDR" />
+
+    <TextView
+        android:id="@+id/getLDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="STATUS LDR"
+        app:layout_constraintStart_toStartOf="@+id/getBuzzer"
+        app:layout_constraintTop_toBottomOf="@+id/getflame" />
+
+    <TextView
+        android:id="@+id/getBuzzer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="88dp"
+        android:text="STATUS BUZZER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getLDR" />
+
+</android.support.constraint.ConstraintLayout>
